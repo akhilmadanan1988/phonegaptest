@@ -51,6 +51,7 @@ createButton.addEventListener("click", clickCreate, false);
 
 function clickScan() {
 
+    alert();
 try{
 scanner.scan(scannerSuccess, scannerFailure);
 }catch(e){
