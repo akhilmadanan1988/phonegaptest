@@ -44,8 +44,8 @@ catch(e) {
 alert('scanner could not be loaded');
 }
 
-scanButton.addEventListener("click", clickScan, false);
-createButton.addEventListener("click", clickCreate, false);
+//scanButton.addEventListener("click", clickScan, false);
+//createButton.addEventListener("click", clickCreate, false);
 
 }
 
