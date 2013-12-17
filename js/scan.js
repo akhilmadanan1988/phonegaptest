@@ -1,5 +1,4 @@
-function scan()
-{
+
     
   cordova.plugins.barcodeScanner.scan(
       function (result) {
@@ -14,4 +13,3 @@ function scan()
    );
     
     
-}
