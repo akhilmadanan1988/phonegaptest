@@ -51,7 +51,7 @@ createButton.addEventListener("click", clickCreate, false);
 
 function clickScan() {
 
-    alert();
+   
 try{
 scanner.scan(scannerSuccess, scannerFailure);
 }catch(e){
@@ -62,8 +62,9 @@ alert(e.message);
 
 //------------------------------------------------------------------------------
 function scannerSuccess(result) {
-navigator.notification.alert("Scan Success");
+//navigator.notification.alert("Scan Success");
 console.log("scannerSuccess: result: " + result)
+
 resultSpan.innerText = "success: " + JSON.stringify(result)
 }
 
