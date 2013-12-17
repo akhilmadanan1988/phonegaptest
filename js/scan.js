@@ -51,7 +51,7 @@ alert('scanner could not be loaded');
 
 function clickScan() {
 
-    alert(11);
+   
 try{
 scanner.scan(scannerSuccess, scannerFailure);
 }catch(e){
@@ -63,8 +63,8 @@ alert(e.message);
 //------------------------------------------------------------------------------
 function scannerSuccess(result) {
 //navigator.notification.alert("Scan Success");
-console.log("scannerSuccess: result: " + result)
-resultSpan.innerText = "success: " + JSON.stringify(result)
+//console.log("scannerSuccess: result: " + result)
+resultSpan.innerText = "success: " + result.text;
 }
 
 //------------------------------------------------------------------------------
